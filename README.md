@@ -1,5 +1,5 @@
-### D5_ProceduralDots
-This is a group of inserts for detailing based on the dots generators. All inserts have been given a z offset of 0.001 to help prevent z fighting. 
+# D5_ProceduralDots
+This is a group of inserts for detailing based on the dots generators. All 2d inserts have been given a z offset of 0.001 to help prevent z fighting. 
 
 ## List of Generators
 ### Random Lines
@@ -24,6 +24,9 @@ Setting one or both dimensions to 1 can be used to make lines or single points. 
 
 ### Accumulated Line
 Dot positions are calculated cumulatively with both a multiplier and a constant addition option for both translation and rotation. In the simplist form this can be used to create straight lines. It can also be used to create exponential offset between subsequent dots, simple arcs, and spiral patterns. Currently only works facing in the z+ direction.
+
+### TriColor
+This insert creats a 3d line of dots (spheres or cubes) with different emission shaders for the first and last nodes. The effect is trying to emulate the nav buoys in Eve online entering and exiting space stations.
 
 ## Composite Nodes
 The nodes have been made stackable so multiple versions of the same modifier or different modifiers can be applied. If you're using a mesh with real geometry use the "ClearGeometry" node.
